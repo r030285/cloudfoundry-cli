@@ -81,7 +81,7 @@ var services = cf.getApps()
 console.log(services)
 ```
 
-#### `.provisionService(<details>, [callback])`
+#### `.createService(<details>, [callback])`
 
 `details` object can have the following following properties:
 
