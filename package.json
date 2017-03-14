@@ -1,17 +1,21 @@
 {
   "name": "cloudfoundry-cli",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Node.js library for interfacing with the Cloud Foundry command line interface",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hacksparrow/cloudfoundry-cli.git"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": ["cloudfoundry", "bluemix", "cloud", "foundry"],
+  "author": {
+    "name": "Hage Yaapa",
+    "email": "captain@hacksparrow.com"
+  },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/hacksparrow/cloudfoundry-cli/issues"
   },
