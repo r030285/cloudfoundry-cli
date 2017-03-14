@@ -47,7 +47,7 @@ All further code samples will refer to the variable `cf` instantiated above.
 
 ### Apps
 
-#### getApps([filters], [callback])
+#### `.getApps([filters], [callback])`
 
 ```js
 cf.getApps(function(err, apps) {
@@ -56,7 +56,7 @@ cf.getApps(function(err, apps) {
 })
 ```
 
-#### getAppsSync([filters])
+#### `.getAppsSync([filters])`
 
 ```js
 var apps = cf.getApps()
@@ -65,7 +65,7 @@ console.log(apps)
 
 ### Services
 
-#### getServices([filters], [callback])
+#### `.getServices([filters], [callback])`
 
 ```js
 cf.getApps(function(err, services) {
@@ -74,14 +74,14 @@ cf.getApps(function(err, services) {
 })
 ```
 
-#### getServicesSync([filters])
+#### `.getServicesSync([filters])`
 
 ```js
 var services = cf.getApps()
 console.log(services)
 ```
 
-#### provisionService(<details>, [callback])
+#### `.provisionService(<details>, [callback])`
 
 `details` object can have the following following properties:
 
@@ -90,7 +90,7 @@ console.log(services)
 - `plan`: Plan type of the service
 
 ```js
-cf.provisionService({
+cf.createService({
   name: 'mongoNo1',
   type: 'compose-for-mongodb',
   plan: 'Standard'
@@ -101,7 +101,7 @@ cf.provisionService({
 })
 ```
 
-#### provisionServiceSync(<details>)
+#### `.createServiceSync(<details>)`
 
 `details` object can have the following following properties:
 
