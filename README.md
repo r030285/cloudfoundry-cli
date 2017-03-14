@@ -47,7 +47,7 @@ All further code samples will refer to the variable `cf` instantiated above.
 
 ### Apps
 
-#### getApps([filters])
+#### getApps([filters], [callback])
 
 ```js
 cf.getApps(function(err, apps) {
@@ -65,7 +65,7 @@ console.log(apps)
 
 ### Services
 
-#### getServices([filters])
+#### getServices([filters], [callback])
 
 ```js
 cf.getApps(function(err, services) {
