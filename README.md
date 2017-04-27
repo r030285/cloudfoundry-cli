@@ -59,7 +59,7 @@ cf.getApps(function(err, apps) {
 #### `.getAppsSync([filters])`
 
 ```js
-var apps = cf.getApps()
+var apps = cf.getAppsSync()
 console.log(apps)
 ```
 
@@ -77,7 +77,7 @@ cf.getApps(function(err, services) {
 #### `.getServicesSync([filters])`
 
 ```js
-var services = cf.getApps()
+var services = cf.getServicesSync([filters])
 console.log(services)
 ```
 
