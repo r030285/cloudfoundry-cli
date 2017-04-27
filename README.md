@@ -120,6 +120,15 @@ var service = cf.provisionService({
 console.log(service)
 ```
 
+#### `.deleteService(<name>, [callback])`
+
+- `name`: Name of the service
+- `callback`: Callback function
+
+#### `.deleteServiceSync(<name>)`
+
+- `name`: Name of the service
+
 ## LICENSE
 
 [MIT](LICENSE)
