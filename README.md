@@ -49,6 +49,8 @@ All further code samples will refer to the variable `cf` instantiated above.
 
 #### `.getApps([filters], [callback])`
 
+`filters` is defined in the [querystring](https://nodejs.org/api/querystring.html) format.
+
 ```js
 cf.getApps(function(err, apps) {
   if (err) return console.log(err)
