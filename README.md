@@ -47,6 +47,10 @@ All further code samples will refer to the variable `cf` instantiated above.
 
 ### Apps
 
+#### `.pushApp([dir])`
+
+#### `.pushAppSync([dir])`
+
 #### `.getApps([filters], [callback])`
 
 `filters` is defined in the [querystring](https://nodejs.org/api/querystring.html) format.
@@ -64,6 +68,10 @@ cf.getApps(function(err, apps) {
 var apps = cf.getAppsSync()
 console.log(apps)
 ```
+
+#### `.deleteApp(<name>)`
+
+#### `.deleteAppSync(<name>)`
 
 ### Services
 
