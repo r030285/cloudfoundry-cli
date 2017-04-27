@@ -10,7 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/hacksparrow/cloudfoundry-cli.git"
   },
-  "keywords": ["cloudfoundry", "bluemix", "cloud", "foundry"],
+  "keywords": [
+    "cloudfoundry",
+    "bluemix",
+    "cloud",
+    "foundry"
+  ],
   "author": {
     "name": "Hage Yaapa",
     "email": "captain@hacksparrow.com"
