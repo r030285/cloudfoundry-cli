@@ -47,7 +47,7 @@ All further code samples will refer to the variable `cf` instantiated above.
 
 ### Apps
 
-#### `.pushApp([dir])`
+#### `.pushApp([dir], [callback])`
 
 #### `.pushAppSync([dir])`
 
@@ -69,7 +69,7 @@ var apps = cf.getAppsSync()
 console.log(apps)
 ```
 
-#### `.deleteApp(<name>)`
+#### `.deleteApp(<name>, [callback])`
 
 #### `.deleteAppSync(<name>)`
 
