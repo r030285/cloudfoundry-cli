@@ -10,7 +10,7 @@ const servicesStdout = fs.readFileSync(__dirname + '/fixtures/services.txt', 'ut
 
 describe('cloudfoundry-cli', function() {
 
-  it('should get apps', function() {
+  it('should parse apps', function() {
     const apps = common.getAppsArray(appsStdout)
     assert(Array.isArray(apps))
     apps.forEach(function(app) {
@@ -23,7 +23,7 @@ describe('cloudfoundry-cli', function() {
     })
   })
 
-  it('should get apps (filters)', function() {
+  it('should parse apps (filters)', function() {
     const filters = querystring.parse('name=apple book cat mat wat&state=started')
     const apps = common.getAppsArray(appsStdout, filters)
     assert(Array.isArray(apps))
@@ -32,7 +32,7 @@ describe('cloudfoundry-cli', function() {
     assert.equal(apps[0].state, 'started')
   })
 
-  it('should get services', function() {
+  it('should parse services', function() {
     const services = common.getServicesArray(servicesStdout)
     assert(Array.isArray(services))
     services.forEach(function(service) {
@@ -44,7 +44,7 @@ describe('cloudfoundry-cli', function() {
     })
   })
 
-  it('should get services (filters)', function() {
+  it('should parse services (filters)', function() {
     const filters = querystring.parse('name=mr. bunny rabbit&plan=Standard')
     const services = common.getServicesArray(servicesStdout, filters)
     assert(Array.isArray(services))
